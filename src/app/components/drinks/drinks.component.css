@@ -1,0 +1,173 @@
+*{
+  background-color: var(--text-color-dark);
+  color: whitesmoke;
+}
+
+.drinks{
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drinks h1{
+  font-family: "Remingtonpor", sans-serif;
+  font-size: 6vw;
+}
+
+.drinks .drinks__body{
+  display: grid;
+  width: inherit;
+  height: inherit;
+  grid-template-areas:
+    'a0 a1'
+    'b0 b1';
+  gap: 1rem;
+  padding: 0;
+}
+
+.drinks__body img{
+  width: 100%;
+  height: auto;
+}
+
+.item1{
+  grid-area: a0;
+  border-radius: 0 10rem 10rem 0;
+}
+
+.item2{
+  grid-area: a1;
+  justify-self: center;
+  align-self: center;
+}
+
+.card{
+  border: solid whitesmoke 1px;
+  border-radius: 3rem;
+  max-width: 45vw;
+}
+
+.card p{
+  padding: 3rem;
+  border-radius: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Bona Nova", sans-serif;
+}
+
+.item3{
+  grid-area: b1;
+  border-radius: 10rem 0 0 10rem;
+}
+
+.item4{
+  grid-area: b0;
+  justify-self: center;
+  align-self: center;
+}
+
+.title__close{
+  display: none;
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 768px) {
+  .drinks{
+    padding-top: 3rem;
+  }
+
+  .drinks .drinks__body{
+    grid-template-areas:
+    'a0'
+    'b0'
+    'e0'
+    'c0'
+    'd0';
+  }
+
+  .item1{
+    grid-area: a0;
+    border-radius: 0 20rem 20rem 20rem;
+  }
+
+  .item2{
+    grid-area: b0;
+  }
+
+  .item3{
+    grid-area: c0;
+    max-height: 40vh;
+    border-radius: 20rem 0 20rem 20rem;
+  }
+
+  .item4{
+    grid-area: d0;
+  }
+
+  .item5{
+    grid-area: e0;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .drinks h1{
+    font-size: 10vw;
+  }
+
+  .title__open{
+    display: flex;
+  }
+
+  .title__close{
+    display: none;
+  }
+
+  .card{
+    max-width: 80vw;
+  }
+
+  .card p{
+    font-size: 1.5rem;
+  }
+
+  .drinks__body img{
+    max-height: none;
+  }
+
+  .drinks__body img{
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 769px) and (max-width: 1044px) {
+  .drinks h1{
+    font-size: 10vw;
+  }
+
+  .item1{
+    grid-area: a0;
+  }
+
+  .item2{
+    grid-area: b0;
+  }
+
+  .item3{
+    grid-area: a1;
+  }
+
+  .item4{
+    grid-area: b1;
+  }
+
+  .card p{
+    font-size: 2.1rem;
+  }
+
+  .drinks__body img{
+    max-height: 45vh;
+  }
+}

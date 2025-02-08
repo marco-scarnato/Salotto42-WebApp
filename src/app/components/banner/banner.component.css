@@ -1,0 +1,33 @@
+.banner-bs{
+  font-size: 1.6vw;
+  background-color:  var(--secondary);
+  color: var(--primary);
+  padding: 2rem 1rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-bs .link{
+  opacity: 0.8;
+  background: var(--extra);
+  padding: 1rem 5rem;
+  text-decoration: none;
+  border-radius: 3rem;
+  font-family: "Italiana", sans-serif;
+  color: var(--text-color-dark);
+  border: solid var(--extra) 0.2rem;
+}
+
+.banner-bs .link:hover{
+  background: var(--primary);
+  color: var(--extra);
+  border: solid var(--primary) 0.2rem;
+}
+
+@media screen and (max-width:600px) {
+  .banner-bs{
+    font-size: 5vw;
+  }
+}

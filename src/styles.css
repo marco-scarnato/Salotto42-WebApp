@@ -1,0 +1,30 @@
+:root{
+  --primary: #FFFFFF;
+  --secondary: #1b1819;
+  --extra: #F1B658;
+  /*--extra: #E2BF36;*/
+  --text-color-dark: #060808;
+}
+
+@font-face {
+  font-family: "Italiana";
+  src: local("Italiana"), url(assets/Italiana/Italiana-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bona Nova";
+  src: local("Bona Nova"), url(assets/Bona_Nova/BonaNova-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Remingtonpor";
+  src: local("Remingtonpor"), url(assets/Remingtonpor/remingtonpor.ttf) format("truetype");
+}
+html{
+  font-size: 62.5%;
+  margin: 0;
+}
+
+body{
+  background-color: var(--primary) !important;
+}

@@ -1,0 +1,137 @@
+.contacts {
+  width: 100%;
+  height: auto;
+  background: url("../../../assets/for_home/5_contacts_ms.png"), var(--text-color-dark);
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+
+.row{
+  width: 100%;
+}
+
+.card {
+  padding: 2rem;
+  margin: 4rem 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3rem;
+  background-color: var(--text-color-dark);
+  border: solid whitesmoke;
+  color: whitesmoke;
+}
+
+.card .card-title {
+  max-width: 98%;
+}
+
+.card .card-title h1 {
+  font-family: "Italiana", sans-serif;
+  font-size: 3vw;
+  background-color: var(--text-color-dark);
+  color: whitesmoke;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+.card .card-body h3 {
+  font-family: "Italiana", sans-serif;
+  font-size: 2.4vw;
+}
+
+.card span {
+  background-color: var(--text-color-dark);
+  height: 1px;
+  width: 90%;
+  margin: 1rem;
+}
+
+.card .social{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+
+.card .social a{
+  padding:1rem;
+  color: whitesmoke;
+}
+
+.card .social svg{
+  width: 5vw;
+  height: 5vh;
+  color: whitesmoke;
+
+}
+
+.maps{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maps iframe{
+  margin-top: 4rem;
+  height: 80%;
+  width: 90%;
+
+  border-radius: 3rem;
+}
+
+.only-phone{
+  display: none;
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 767px) {
+  .contacts {
+    padding-left: 2rem;
+  }
+
+  .card {
+    margin: 5px;
+  }
+
+  .card .card-title h1 {
+    font-size: 8vw;
+  }
+
+  .card .card-body {
+    font-size: 4vw;
+  }
+
+  .card .card-body h3 {
+    font-size: 5vw;
+  }
+
+  .maps{
+    display: none;
+  }
+
+  .card .social svg{
+    width: 10vw;
+    height: 10vh;
+  }
+
+  .only-phone{
+    display: block;
+  }
+
+  .only-phone iframe{
+    border-radius: 3rem;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1044px) {
+  .card {
+    margin: 2rem 6rem;
+  }
+}
